@@ -1,0 +1,82 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    margin: 0 auto;
+    border: 2px solid #007bff;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-image: url("/static/pexels-pixabay-209831.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* These two lines make the container full screen */
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* These two lines enlarge all the details in the page */
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+input[type="text"] {
+    width: 100%;
+    position: relative;
+    bottom: 30px;
+    /* This line resets the font size of the input box */
+    font-size: 30px;
+}
+
+button {
+    padding: 16px 32px;
+    border: none;
+    background-color: #ff7a00;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Center the button */
+    margin: 0 auto;
+    display: block;
+}
+
+button:hover {
+    background-color: #ff5600;
+}
+
+#weatherInfo {
+    margin-top: 20px;
+    margin-bottom: 20px; /* Add space between weather app and below text */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#weatherInfo h2 {
+    color: #ff7a00; /* Change the color of the weather information text */
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#weatherInfo p {
+    margin: 10px 0;
+    color: #333;
+    font-size: 24px;
+}
+
+/* Remove the small white box below the "Get Weather" button */
+#weatherInfo p:last-child {
+    margin-bottom: 0;
+}
