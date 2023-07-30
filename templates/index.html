@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <form id="weatherForm" onsubmit="return getWeather(event)">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button type="submit">Get Weather</button>
+        </form>
+        <div id="weatherInfo"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="static/script.js"></script>
+</body>
+</html>
